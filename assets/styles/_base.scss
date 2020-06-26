@@ -1,0 +1,27 @@
+$color-white: #f9fafb;
+$color-light: #f0f0f0;
+$color-black: #000;
+$color-grey: #777;
+
+$color-blue: #3498db;
+$color-success: #2ecc71;
+$color-error: #e74c3e;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}

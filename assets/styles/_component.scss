@@ -1,0 +1,40 @@
+.form__control{
+    label{
+        display: block;
+        margin-bottom: .5rem;
+        color: $color-grey;
+        font-size: 1.6rem;
+    }
+
+    input{
+        border: 2px solid $color-light;
+        border-radius: .5rem;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.4rem;
+        font-family: inherit;
+        &:focus{
+            outline: 0;
+            border-color: $color-grey;
+        }
+    }
+    &.success input{
+        border-color: $color-success;
+    }
+
+    &.error input{
+        border-color: $color-error;
+    }
+    small{
+        color: $color-error;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1.2rem;
+        visibility: hidden;
+    }
+    &.error small{
+        visibility: visible;
+    }
+}

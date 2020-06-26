@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9fafb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.form__control label {
+  display: block;
+  margin-bottom: .5rem;
+  color: #777;
+  font-size: 1.6rem;
+}
+
+.form__control input {
+  border: 2px solid #f0f0f0;
+  border-radius: .5rem;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
+.form__control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form__control.success input {
+  border-color: #2ecc71;
+}
+
+.form__control.error input {
+  border-color: #e74c3e;
+}
+
+.form__control small {
+  color: #e74c3e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.2rem;
+  visibility: hidden;
+}
+
+.form__control.error small {
+  visibility: visible;
+}
+
+.container {
+  background-color: #f9fafb;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  width: 40rem;
+}
+
+.form {
+  padding: 3rem 4rem;
+}
+
+.form h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: calc(2rem + 1vw);
+}
+
+.form__control {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.form button {
+  background-color: #3498db;
+  cursor: pointer;
+  color: #f9fafb;
+  border: 2px solid #3498db;
+  border-radius: .5rem;
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  letter-spacing: .8px;
+  outline: none;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+}
+
+.form button:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.form button:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+/*# sourceMappingURL=style.css.map */
